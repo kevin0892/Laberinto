@@ -6009,6 +6009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 0.2
+  checkpoint: {fileID: 1157596403}
 --- !u!1001 &1683826618
 PrefabInstance:
   m_ObjectHideFlags: 0
