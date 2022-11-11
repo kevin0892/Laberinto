@@ -12,12 +12,17 @@ public class Character_Controller : MonoBehaviour
     private float movSpeed = 0.2f;
     private Transform meshPlayer;
 
+    //Checkpoint
+    public GameObject checkpoint;
+
     private void Start()
     {
         
         GameObject tempPlayer = GameObject.FindGameObjectWithTag("Player");
         meshPlayer = tempPlayer.transform;
         _charController = tempPlayer.GetComponent<CharacterController>();
+        transform.position = new Vector3(checkpoint.transform.position.x, checkpoint.transform.position.y, checkpoint.transform.position.z);
+        tempPlayer.transform.position = new Vector3(checkpoint.transform.position.x, checkpoint.transform.position.y, checkpoint.transform.position.z);
     }
 
     private void Update()
